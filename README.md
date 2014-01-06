@@ -14,18 +14,37 @@ Requirements
 
     apt
     ubuntu-base
+    openssh
+    ntp
 
 Attributes
 ----------
 
-*List attributes here*
+[Take a look here.](https://github.com/darron/home-server-cookbook/blob/master/attributes/default.rb)
 
 Recipes
 -------
 
 ### home-server::default
 
-This configures a home server.
+This configures my home server.
+
+### TODO:
+
+    Dynamic DNS Registration
+    Sudo for my user.
+    SMTP with Relayhost.
+    rkhunter
+    fail2ban or denyhosts w/whitelisting
+    Firewall
+    Internal DHCP Server
+    Caching DNS server and 1 internal zone.
+    NAT for Internal network.
+    Papertrail Integration
+    If I have time:
+    netatalk
+    OpenVPN
+    Plex
 
 Testing
 -------
