@@ -3,7 +3,19 @@ require 'spec_helper'
 
 # Write integration tests with Serverspec - http://serverspec.org/
 describe 'home-server::default' do
-  it 'does something' do
-    pending 'Replace this with meaningful tests'
+  describe service('ssh') do
+    it { should be_enabled }
+  end
+
+  describe service('ssh') do
+    it { should be_running }
+  end
+
+  describe service('ntp') do
+    it { should be_enabled }
+  end
+
+  describe service('ntp') do
+    it { should be_running }
   end
 end

@@ -5,7 +5,15 @@ require 'spec_helper'
 describe 'home-server::default' do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
-  it 'does something' do
-    pending 'Replace this with meaningful tests'
+  it 'includes the `ubuntu-base` recipe' do
+    expect(chef_run).to include_recipe('ubuntu-base::default')
+  end
+
+  it 'includes the `openssh` recipe' do
+    expect(chef_run).to include_recipe('openssh::default')
+  end
+
+  it 'includes the `ntp` recipe' do
+    expect(chef_run).to include_recipe('ntp::default')
   end
 end

@@ -18,4 +18,18 @@
 # limitations under the License.
 #
 
-# Set meaningful node attributes here
+# OpenSSH
+
+default['openssh']['client']['host'] = '*'
+default['openssh']['server']['permit_root_login'] = 'no'
+default['openssh']['server']['authorized_keys_file'] = '%h/.ssh/authorized_keys'
+default['openssh']['server']['use_p_a_m'] = 'yes'
+default['openssh']['server']['allow_agent_forwarding'] = 'yes'
+default['openssh']['server']['allow_tcp_forwarding'] = 'yes'
+default['openssh']['server']['x11_forwarding'] = 'yes'
+default['openssh']['server']['x11_display_offset'] = '10'
+default['openssh']['server']['t_c_p_keep_alive'] = 'yes'
+default['openssh']['server']['use_dns'] = 'no'
+default['openssh']['server']['subsystem'] =        'sftp        /usr/libexec/sftp-server'
+default['openssh']['server']['password_authentication'] = 'no'
+default['openssh']['server']['permit_empty_passwords'] = 'yes'

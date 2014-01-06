@@ -18,4 +18,8 @@
 # limitations under the License.
 #
 
-# Install/configure something here
+include_recipe 'ubuntu-base::default'
+
+include_recipe 'openssh::default'
+
+include_recipe 'ntp::default'
