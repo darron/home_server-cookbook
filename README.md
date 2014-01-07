@@ -16,6 +16,8 @@ Requirements
     ubuntu-base
     openssh
     ntp
+    firewall
+    sudo
 
 Attributes
 ----------
@@ -31,20 +33,30 @@ This configures my home server.
 
 ### TODO:
 
+    Allow SSH Env vars to persist - for ssh-agent on remote box
     Dynamic DNS Registration
-    Sudo for my user.
     SMTP with Relayhost.
     rkhunter
     fail2ban or denyhosts w/whitelisting
-    Firewall
     Internal DHCP Server
     Caching DNS server and 1 internal zone.
     NAT for Internal network.
     Papertrail Integration
-    If I have time:
+
+If I have time:
+
+    2 Factor Auth
     netatalk
     OpenVPN
     Plex
+
+### Done:
+
+Basic Setup
+Firewall
+OpenSSH Configuration Tweaks
+NTP
+Sudo for my user.
 
 Testing
 -------

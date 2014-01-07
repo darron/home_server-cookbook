@@ -1,7 +1,7 @@
 # encoding: utf-8
 #
 # Cookbook Name:: home-server
-# Recipe:: default
+# Recipe:: users
 #
 # Copyright (C) 2014, Darron Froese <darron@froese.org>
 #
@@ -18,12 +18,7 @@
 # limitations under the License.
 #
 
-include_recipe 'ubuntu-base::default'
-
-include_recipe 'home-server::firewall'
-
-include_recipe 'home-server::users'
-
-include_recipe 'openssh::default'
-
-include_recipe 'ntp::default'
+sudo 'darron' do
+  user      'darron'
+  nopasswd  true
+end
