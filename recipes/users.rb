@@ -18,7 +18,19 @@
 # limitations under the License.
 #
 
-sudo 'darron' do
-  user      'darron'
-  nopasswd  true
+# Add each user to the server.
+node['users'].each do |u|
+  user u do
+    supports :manage_home => true # rubocop:disable HashSyntax
+    home "/home/#{u}"
+    action :create
+  end
+end
+
+# Add sudoers files to /etc/sudoers.d/
+node['sudoer']['users'].each do |user|
+  sudo user do
+    user      user
+    nopasswd  true
+  end
 end

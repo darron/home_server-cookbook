@@ -18,8 +18,13 @@
 # limitations under the License.
 #
 
-# OpenSSH
+# Users.
+default['users'] = %w{ darron kristin }
 
+# Sudoer Users
+default['sudoer']['users'] = %w{ darron kristin }
+
+# OpenSSH
 default['openssh']['client']['host'] = '*'
 default['openssh']['server']['permit_root_login'] = 'no'
 default['openssh']['server']['authorized_keys_file'] = '%h/.ssh/authorized_keys'
