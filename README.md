@@ -13,7 +13,7 @@ Requirements
 ### Cookbooks:
 
     apt
-    ubuntu-base
+    ubuntu_base
     openssh
     ntp
     firewall

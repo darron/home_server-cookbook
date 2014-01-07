@@ -2,4 +2,4 @@ site :opscode
 
 metadata
 
-cookbook 'ubuntu-base', "0.2.0", git: 'https://github.com/darron/ubuntu-base-cookbook.git'
+cookbook 'ubuntu_base', git: 'https://github.com/darron/ubuntu_base-cookbook.git'

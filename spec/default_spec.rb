@@ -5,8 +5,8 @@ require 'spec_helper'
 describe 'home_server::default' do
   let(:chef_run) { ChefSpec::Runner.new.converge(described_recipe) }
 
-  it 'includes the `ubuntu-base` recipe' do
-    expect(chef_run).to include_recipe('ubuntu-base::default')
+  it 'includes the `ubuntu_base` recipe' do
+    expect(chef_run).to include_recipe('ubuntu_base::default')
   end
 
   it 'includes the `openssh` recipe' do

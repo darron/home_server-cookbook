@@ -8,7 +8,7 @@ version          '0.1.0'
 recipe           'home_server::default', 'Installs/configures my home server'
 
 depends 'apt', '2.3.4'
-depends 'ubuntu-base', '0.2.0'
+depends 'ubuntu_base', '0.3.0'
 depends 'openssh', '1.3.2'
 depends 'ntp', '1.5.4'
 depends 'firewall', '0.11.2'

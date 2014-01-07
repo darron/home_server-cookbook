@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 
-include_recipe 'ubuntu-base::default'
+include_recipe 'ubuntu_base::default'
 
 include_recipe 'home_server::firewall'
 
