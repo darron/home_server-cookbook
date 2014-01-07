@@ -16,4 +16,8 @@ describe 'home-server::default' do
   it 'includes the `ntp` recipe' do
     expect(chef_run).to include_recipe('ntp::default')
   end
+
+  it 'includes the `firewall` recipe' do
+    expect(chef_run).to include_recipe('firewall::default')
+  end
 end

@@ -18,4 +18,8 @@ describe 'home-server::default' do
   describe service('ntp') do
     it { should be_running }
   end
+
+  describe iptables do
+    it { should have_rule('-p tcp -m tcp --dport 22 -j ACCEPT').with_table('filter').with_chain('ufw-user-input') }
+  end
 end

@@ -1,7 +1,7 @@
 # encoding: utf-8
 #
 # Cookbook Name:: home-server
-# Recipe:: default
+# Recipe:: firewall
 #
 # Copyright (C) 2014, Darron Froese <darron@froese.org>
 #
@@ -18,10 +18,14 @@
 # limitations under the License.
 #
 
-include_recipe 'ubuntu-base::default'
+include_recipe 'firewall::default'
 
-include_recipe 'openssh::default'
+firewall 'ufw' do
+  action :enable
+end
 
-include_recipe 'ntp::default'
-
-include_recipe 'home-server::firewall'
+firewall_rule 'ssh' do
+  port     22
+  action   :allow
+  notifies :enable, 'firewall[ufw]'
+end
