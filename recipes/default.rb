@@ -20,8 +20,8 @@
 
 include_recipe 'ubuntu-base::default'
 
+include_recipe 'home-server::firewall'
+
 include_recipe 'openssh::default'
 
 include_recipe 'ntp::default'
-
-include_recipe 'home-server::firewall'
