@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-# Cookbook Name:: home-server
+# Cookbook Name:: home_server
 # Recipe:: default
 #
 # Copyright (C) 2014, Darron Froese <darron@froese.org>
@@ -20,9 +20,9 @@
 
 include_recipe 'ubuntu-base::default'
 
-include_recipe 'home-server::firewall'
+include_recipe 'home_server::firewall'
 
-include_recipe 'home-server::users'
+include_recipe 'home_server::users'
 
 include_recipe 'openssh::default'
 

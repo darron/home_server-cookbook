@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-# Cookbook Name:: home-server
+# Cookbook Name:: home_server
 # Recipe:: users
 #
 # Copyright (C) 2014, Darron Froese <darron@froese.org>

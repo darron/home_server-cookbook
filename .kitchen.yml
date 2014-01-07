@@ -13,5 +13,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[home-server::default]
+      - recipe[home_server::default]
     attributes:

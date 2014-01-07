@@ -12,13 +12,13 @@
             "source_ami": "ami-8e1d79be",
             "instance_type": "c1.medium",
             "ssh_username": "ubuntu",
-            "ami_name": "home-server {{timestamp}}"
+            "ami_name": "home_server {{timestamp}}"
             }],
 
     "provisioners": [{
       "type": "chef-solo",
       "cookbook_paths": ["./vendor/cookbooks"],
-      "run_list": [ "home-server" ]
+      "run_list": [ "home_server" ]
     }],
 
     "post-processors": ["vagrant"]

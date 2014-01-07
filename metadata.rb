@@ -1,11 +1,11 @@
 # encoding: utf-8
-name             'home-server'
+name             'home_server'
 maintainer       'Darron Froese'
 maintainer_email 'darron@froese.org'
 license          'Apache 2.0'
 description      'Installs/configures my home server'
 version          '0.1.0'
-recipe           'home-server::default', 'Installs/configures my home server'
+recipe           'home_server::default', 'Installs/configures my home server'
 
 depends 'apt', '2.3.4'
 depends 'ubuntu-base', '0.2.0'

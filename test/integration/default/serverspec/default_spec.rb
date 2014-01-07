@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 # Write integration tests with Serverspec - http://serverspec.org/
-describe 'home-server::default' do
+describe 'home_server::default' do
   describe service('ssh') do
     it { should be_enabled }
   end

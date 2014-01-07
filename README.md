@@ -1,4 +1,4 @@
-home-server Cookbook
+home_server Cookbook
 =================
 
 Requirements
@@ -22,12 +22,12 @@ Requirements
 Attributes
 ----------
 
-[Take a look here.](https://github.com/darron/home-server-cookbook/blob/master/attributes/default.rb)
+[Take a look here.](https://github.com/darron/home_server-cookbook/blob/master/attributes/default.rb)
 
 Recipes
 -------
 
-### home-server::default
+### home_server::default
 
 This configures my home server.
 
@@ -61,7 +61,7 @@ Sudo for my user.
 Testing
 -------
 
-[![Build Status](https://travis-ci.org/darron/home-server-cookbook.png?branch=master)](https://travis-ci.org/darron/home-server-cookbook)
+[![Build Status](https://travis-ci.org/darron/home_server-cookbook.png?branch=master)](https://travis-ci.org/darron/home_server-cookbook)
 
 The cookbook provides the following Rake tasks for testing:
 
